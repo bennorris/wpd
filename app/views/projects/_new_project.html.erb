@@ -1,0 +1,7 @@
+<%=form_for(@project) do |f| %>
+
+  Name: <%=f.text_field :name%> <br>
+  Goal: <%=f.text_field :goal%> words per <%=f.select :period, ['day', 'week'] %> <br>
+  <%=f.submit "Create Project" %>
+
+<% end %>

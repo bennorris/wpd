@@ -1,0 +1,8 @@
+<h1>Have Some Words to Submit? </h1>
+
+<h2>Nice work. </h2>
+
+<%=form_for [@project, @daily] do |f| %>
+<h2>Add <%=f.text_field :word_count %> words to <%=@project.name%>.</h2>
+<%= f.submit "Submit" %>
+<% end %>
